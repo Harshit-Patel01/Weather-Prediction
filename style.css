@@ -1,0 +1,541 @@
+ @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+ /* @import url('https://fonts.googleapis.com/css2?family=Borel&family=Poppins&display=swap'); */
+ 
+ @font-face {
+     font-family: "poppins";
+     src: url("/Poppins-Regular.ttf") format("truetype");
+ }
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "poppins", "Poppins", sans-serif;
+     user-select: none;
+ }
+ 
+ :root {
+     /* ðŸ”µðŸ”µðŸ”µ */
+     /* âš ï¸ Please don't change the color value or names for Blue (if ? modifying code would be difficult */
+     --bg-color-red: #bbd6fd;
+     --accentLightTint-red: #e2eeff;
+     --darkerColor-red: #3569b2;
+     --darkColor-red: #4382ec;
+     --textColorDark-red: #1b3041;
+     --whitishColor-red: #ffffff;
+     /* ðŸ”´ðŸ”´ðŸ”´ */
+     --bg-color-red: #fdbdbd;
+     --accentLightTint-red: #ffe7e7;
+     --darkerColor-red: #b23535;
+     --darkColor-red: #ec4343;
+     --textColorDark-red: #411b1b;
+     --whitishColor-red: #ffffff;
+ 
+     /* ðŸŸ¡ðŸŸ¡ðŸŸ¡ */
+     --bg-color-yellow: #ffed80;
+     --accentLightTint-yellow: #fff6c3;
+     --darkerColor-yellow: #ae9502;
+     --darkColor-yellow: #d1a93d;
+     --textColorDark-yellow: #2f2707;
+     --whitishColor-yellow: #ffffff;
+ 
+     /* ðŸŸ¢ðŸŸ¢ðŸŸ¢ */
+     --bg-color-green: #c7e4c7;
+     --accentLightTint-green: #e1f1e1;
+     --darkerColor-green: #458245;
+     --darkColor-green: #5cba5c;
+     --textColorDark-green: #1b411b;
+     --whitishColor-green: #ffffff;
+ 
+     /* Cyan */
+     /* --bg-color-cyan: #9bffff;
+     --accentLightTint-cyan: #d5ffff;
+     --darkerColor-cyan: #5E9CA0;
+     --darkColor-cyan: #00CED1;
+     --textColorDark-cyan: #08354B; */
+ 
+     --bg-color-cyan: #9cefef;
+     --accentLightTint-cyan: #d5ffff;
+     --darkerColor-cyan: #07787f;
+     --darkColor-cyan: #09b2b4;
+     --textColorDark-cyan: #08354b;
+     --whitishColor-cyan: #ffffff;
+ 
+     /* ðŸ©·ðŸ’—ðŸ©· */
+     --bg-color-pink: #f9c8d6;
+     --accentLightTint-pink: #ffebf2;
+     --darkerColor-pink: #b24b64;
+     --darkColor-pink: #ec5e78;
+     --textColorDark-pink: #411b28;
+     --whitishColor-pink: #ffffff;
+ 
+     /* ðŸŸ ðŸŸ ðŸŸ  */
+     --bg-color-orange: #ffd8b2;
+     --accentLightTint-orange: #ffedd5;
+     --darkerColor-orange: #b26d3e;
+     --darkColor-orange: #ec844d;
+     --textColorDark-orange: #412b1e;
+     --whitishColor-orange: #ffffff;
+ 
+     /* ðŸŸ£ðŸŸ£ðŸŸ£ */
+     --bg-color-purple: #dac2e8;
+     --accentLightTint-purple: #e9e2f3;
+     --darkerColor-purple: #724b8f;
+     --darkColor-purple: #9563b5;
+     --textColorDark-purple: #2d1b3e;
+     --whitishColor-purple: #ffffff;
+ 
+     /* âšª Silver */
+     --bg-color-silver: #c6c6c6;
+     --accentLightTint-silver: #e5e5e5;
+     --darkerColor-silver: #6f6f6f;
+     --darkColor-silver: #9e9e9e;
+     --textColorDark-silver: #333333;
+     --whitishColor-silver: #ffffff;
+ 
+     /* ðŸŸ¤ðŸŸ¤ðŸŸ¤ */
+     --bg-color-brown: #dfc28d;
+     --accentLightTint-brown: #eae3c9;
+     --darkerColor-brown: #4e3930;
+     --darkColor-brown: #705347;
+     --textColorDark-brown: #16100d;
+     --whitishColor-brown: #ffffff;
+ 
+     /* ðŸ©¶ðŸ©¶ðŸ©¶ Grey */
+     /* --bg-color-pink: #f9c8d6;
+     --accentLightTint-pink: #ffebf2;
+     --darkerColor-pink: #b24b64;
+     --darkColor-pink: #ec5e78;
+     --textColorDark-pink: #411b28;
+     --whitishColor-pink: #ffffff; */
+ 
+ 
+ 
+     --bg-color-grey: #ffccbf;
+     --accentLightTint-grey: #fdf1ef;
+     --darkerColor-grey: #f67455;
+     --darkColor-grey: #9c29ba;
+     --textColorDark-grey: #441730;
+     --whitishColor-grey: #ffffff;
+ 
+ 
+     /* âš«âš«âš« */
+     --bg-color-dark: #171615;
+     --accentLightTint-dark: #3c3c3c;
+     --darkerColor-dark: #eeeeee;
+     --darkColor-dark: #212121;
+     --textColorDark-dark: #d6d6d6;
+     --whitishColor-dark: #cccccc;
+ 
+     /* ----------------- */
+ 
+     /* Global variables */
+     --gap: 30px;
+     --round: 20px;
+ 
+     /* Shortcut bar */
+     --max-shortcut-bar-width: 60vw;
+     --shortcut-bar-gap-and-padding: 10px;
+     --shortcut-size: 50px;
+     --always-show-dock-background: 0;
+ }
+ 
+ /* Visible state: when you want the result box to appear */
+ .resultBox.show {
+     opacity: 1;
+     visibility: visible;
+     transform: translateY(0);
+     z-index: 1000;
+     pointer-events: all;
+ }
+ 
+ .resultItem {
+     padding: 8px;
+     cursor: pointer;
+     font-size: 1.1rem;
+     color: var(--textColorDark-red);
+ }
+ 
+ .resultItem.active,
+ .resultItem:hover {
+     background-color: var(--darkColor-red);
+     border-radius: 15px;
+     color: #fff;
+ }
+ 
+ /* Theme */
+ /* âš«ðŸŸ£ðŸ”µðŸ”´ðŸŸ¡ðŸŸ¢ðŸŸ âšª */
+ 
+ .accentColor {
+     fill: var(--darkColor-red);
+ }
+ 
+ .bgLightTint {
+     fill: var(--accentLightTint-red);
+     background-color: var(--accentLightTint-red);
+ }
+ 
+ /* .whitishColor {
+     fill: var(--whitishColor-red);
+     background-color: var(--whitishColor-red);
+ } */
+ 
+ .strokecolor {
+     stroke: var(--darkColor-red);
+ }
+ 
+ .lessDark {
+     background-color: var(--bg-color-red);
+     fill: var(--bg-color-red);
+ }
+ 
+ /* âš«ðŸŸ£ðŸŸ¡ðŸ”µðŸ”´ðŸŸ âšªðŸŸ¢ */
+ 
+ html {
+     height: 100%;
+     width: 100%;
+     margin: 0;
+     scrollbar-width: none; /* For Firefox */
+ }
+ 
+ .html::-webkit-scrollbar {
+     display: none;
+ }
+ 
+ body {
+     background-color: var(--bg-color-red);
+     color: var(--textColorDark-red);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     min-height: 100%;
+     /* background-color: red; */
+     overflow: auto;
+     background-image: var(--bg-image, none);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     height: 100vh; /* Ensure the image fits the viewport height */
+     margin: 0; /* Remove margin to avoid unwanted spacing */
+ }
+ 
+ .centerDiv {
+     display: grid;
+     grid-template-columns: auto auto;
+     width: fit-content;
+     height: fit-content;
+     /* background-color: #17a638; */
+     /* always leave enough space for the shortcuts bar at the bottom */
+     padding-bottom: calc(var(--shortcut-size) + var(--gap) * 2);
+ }
+ 
+ /* ____________Clock_____________________---- */
+ #digitalClock {
+     width: 300px;
+     height: 300px;
+     border-radius: 100%;
+     position: relative;
+ }
+ 
+ #analogClock {
+     width: 300px;
+     height: 300px;
+     border-radius: 100%;
+     position: relative;
+ }
+ 
+ #clock svg {
+     position: absolute;
+     animation: clockAnm 1s;
+ }
+ 
+ @keyframes clockAnm {
+     from {
+         transform: rotate(40deg);
+     }
+ 
+     to {
+         transform: rotate(0deg);
+     }
+ }
+ 
+ .clock .centerPoint {
+     width: 20px;
+     height: 20px;
+     position: absolute;
+     left: 0;
+     right: 0;
+     top: 0;
+     bottom: 0;
+     margin: auto;
+ }
+ 
+ .clock .centerPoint .sui {
+     position: absolute;
+     width: 20px;
+     height: 100px;
+     background-color: var(--darkColor-red);
+     top: -90px;
+     transform-origin: bottom;
+     border-radius: 10px;
+ }
+ 
+ #hour {
+     height: 80px;
+     top: -70px;
+     background-color: var(--darkerColor-red);
+     transform: rotate(90deg);
+     transition: transform 1.5s;
+ }
+ 
+ #hour::after {
+     content: "";
+     position: absolute;
+     width: 20px;
+     height: 30px;
+     background-color: var(--darkerColor-red);
+     bottom: -10px;
+     border-radius: 100px;
+ }
+ 
+ #minute {
+     z-index: 9 !important;
+     transition: transform 1.5s;
+ }
+ 
+ #minute::after {
+     content: "";
+     position: absolute;
+     width: 20px;
+     height: 30px;
+     background-color: var(--darkColor-red);
+     bottom: -10px;
+     border-radius: 100px;
+ }
+ 
+ #second {
+     background-color: #00000000;
+     transition: transform 1s;
+ }
+ 
+ #second::after {
+     content: "";
+     position: absolute;
+     width: 20px;
+     height: 20px;
+     background-color: var(--darkColor-red);
+     top: -28px;
+     border-radius: 100%;
+ }
+
+ #date {
+     font-size: 1.4rem;
+ }
+
+ @keyframes blink {
+     50% {
+         opacity: 0;
+     }
+ }
+ 
+ /* __________end of clock___________________ */
+ .leftDiv {
+     /* padding-right: 100px; */
+     transform: translateX(-100px);
+     /* background-color: rgba(102, 51, 153, 0.404); */
+     /* height: fit-content; */
+ }
+ 
+ .rightDiv {
+     position: relative;
+     width: 640px;
+     transform: translateX(100px);
+ }
+ 
+ .rightDiv .topDiv {
+     height: 196px;
+     display: flex;
+     justify-content: flex-end;
+ }
+ 
+ /* lrectangle______________________ */
+ .rightDiv .topDiv .lrectangle {
+     height: 100%;
+     width: 100%;
+     border-radius: var(--round);
+     padding: 20px;
+     position: relative;
+ }
+ 
+ #conditionText {
+     font-size: 1.2rem;
+     color: var(--textColorDark-red);
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     max-width: 372px;
+ }
+ 
+ .cconnt {
+     width: calc(100% - 40px);
+     bottom: 20px;
+     height: fit-content;
+     position: absolute;
+     font-size: 1rem;
+ }
+ 
+ .tilesContainer {
+     height: 50px;
+     width: 100%;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 20px;
+ }
+ 
+ .tilesContainer .tiles {
+     background-color: var(--whitishColor-red);
+     border-radius: 22px;
+     position: relative;
+     height: 50px;
+ }
+ 
+ .tilesContainer .location {
+     background-color: var(--darkColor-red);
+ }
+ 
+ .tilesContainer .location .location_spn {
+     color: #fff;
+ }
+ 
+ .tilesContainer .tiles .icon {
+     height: 100%;
+     aspect-ratio: 1/1;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .tilesContainer .tiles span {
+     position: absolute;
+     top: 0;
+     left: 46px;
+     bottom: 0;
+     margin: auto;
+     color: var(--textColorDark-red);
+     height: fit-content;
+ }
+ 
+ .humidityBar {
+     border-radius: 20px;
+     height: 40px;
+     width: 100%;
+     margin-bottom: 20px;
+     position: relative;
+ }
+ 
+ .humidityBar::after {
+     position: absolute;
+     content: "";
+     height: 100%;
+     width: 40px;
+     background-size: 66%;
+     background: var(--darkColor-red) url("./humidity.svg") no-repeat center
+         center;
+     right: 0;
+     border-radius: 100%;
+ }
+ 
+ .humidityBar .thinLine {
+     position: absolute;
+     width: calc(100% - 60px);
+     background-color: var(--whitishColor-red);
+     height: 6px;
+     border-radius: 10px;
+     top: 0;
+     bottom: 0;
+     margin: auto;
+ }
+ 
+ .humidityBar .slider {
+     height: 100%;
+     width: calc(10% - 60px);
+     /*100-60px because humidityIconContainer is 40px Width and 20px is margin which is = to 60*/
+     min-width: 42%;
+     background-color: var(--darkColor-red);
+     border-radius: 100px;
+     position: absolute;
+     transition: width 1s;
+ }
+ 
+ #humidityLevel {
+     color: #fff;
+     width: fit-content;
+     position: absolute;
+     bottom: 0;
+     top: 0;
+     margin: auto;
+     left: 20px;
+     height: fit-content;
+ }
+ 
+ /* End of _____________________- */
+ 
+ /* ------------Weather Pill------------- */
+ .rightDiv .topDiv .rAndakar {
+     position: relative;
+     height: 100%;
+     aspect-ratio: 1/1;
+     margin-left: var(--gap);
+     animation: rAndAnm 1s;
+     /* transition: rotate 1s; */
+ }
+ 
+ @keyframes rAndAnm {
+     from {
+         transform: rotate(-45deg);
+     }
+ 
+     to {
+         transform: rotate(0deg);
+     }
+ }
+ 
+ .rightDiv .topDiv .rAndakar .wInfo {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     margin: auto;
+     transform: translateX(14px);
+     width: 100px;
+     height: 80%;
+ }
+ 
+ #temp {
+     font-size: 2.6rem;
+     font-weight: bold;
+     color: var(--darkerColor-red);
+     margin: auto;
+     width: fit-content;
+ }
+ 
+ .tempUnit {
+     font-size: 0.4em;
+     position: relative;
+     top: -1.1em;
+     left: 3px;
+     color: var(--darkColor-red);
+ }
+ 
+ #wIcon {
+     width: 80px;
+     height: 80px;
+     margin-top: -11px;
+     margin-left: -30px;
+ }
+ 
+ /* ------------End of Weather Pill------------- */
+ 
