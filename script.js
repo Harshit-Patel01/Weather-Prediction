@@ -23,7 +23,7 @@ updateClock(); // Initial call
 // Function to fetch sensor data from Raspberry Pi
 async function fetchSensorData() {
     try {
-        const response = await fetch('http://10.21.83.142:5000/sensor-data');
+        const response = await fetch('http://<pi_ip:5000>/sensor-data');
         const data = await response.json();
         
         // Update temperature
