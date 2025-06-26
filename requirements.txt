@@ -1,0 +1,7 @@
+flask>=2.0.0
+flask-cors>=3.0.10
+numpy>=1.19.5
+scikit-learn>=0.24.2
+adafruit-circuitpython-dht>=3.7.0
+tensorflow>=2.6.0
+board>=1.0 
