@@ -34,7 +34,7 @@ This project is a Raspberry Pi-based weather monitoring system that uses a DHT11
 
 2. Install the required Python dependencies:
    ```
-   pip install flask flask-cors tensorflow numpy scikit-learn adafruit-circuitpython-dht
+   pip install -r requirements.txt
    ```
 
 3. Connect the DHT11 sensor to your Raspberry Pi:
