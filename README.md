@@ -28,8 +28,8 @@ This project is a Raspberry Pi-based weather monitoring system that uses a DHT11
 
 1. Clone this repository to your Raspberry Pi:
    ```
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/Harshit-Patel01/Weather-Prediction.git
+   cd Weather-Prediction
    ```
 
 2. Install the required Python dependencies:
